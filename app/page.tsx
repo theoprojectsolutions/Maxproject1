@@ -25,7 +25,7 @@ function Icon({ name, size = 24 }: { name: IconName; size?: number }) {
 function BrandMark({ light = false }: { light?: boolean }) {
   return (
     <a className={`brand ${light ? "brand-light" : ""}`} href="#inicio" aria-label="IdeaCondo - início">
-      <img className="brand-logo" src="/brands/ideacondo-logo.png" alt="IdeaCondo" />
+      <img className="brand-logo" src={light ? "/brands/ideacondo-logo.png" : "/brands/ideacondo-logo-header.png"} alt="IdeaCondo" />
     </a>
   );
 }

@@ -15,8 +15,10 @@ button { cursor: pointer; }
 
 .site-header { position: absolute; top: 0; left: 0; width: 100%; z-index: 20; border-bottom: 1px solid rgba(255,255,255,.12); }
 .header-inner { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
-.brand { min-width: 205px; min-height: 58px; padding: 5px 12px; border: 1px solid rgba(23,27,34,.08); border-radius: 15px; display: inline-flex; align-items: center; background: rgba(253,252,249,.97); box-shadow: 0 8px 26px rgba(0,0,0,.12); }
-.brand-logo { display: block; width: 190px; height: 48px; object-fit: cover; object-position: center; }
+.brand { min-width: 205px; min-height: 58px; display: inline-flex; align-items: center; background: transparent; }
+.brand-logo { display: block; width: 205px; height: 48px; object-fit: contain; object-position: left center; }
+.brand-light { padding: 5px 12px; border: 1px solid rgba(23,27,34,.08); border-radius: 15px; background: rgba(253,252,249,.97); box-shadow: 0 8px 26px rgba(0,0,0,.12); }
+.brand-light .brand-logo { width: 190px; height: 48px; object-fit: cover; object-position: center; }
 .desktop-nav { display: flex; gap: 32px; color: rgba(255,255,255,.76); font-size: 14px; }
 .desktop-nav a { transition: color .2s ease; }
 .desktop-nav a:hover { color: var(--lime-bright); }
@@ -215,9 +217,10 @@ footer { background: #111419; color: white; padding: 54px 0 22px; }
   .footer-bottom { flex-direction: column; gap: 9px; }
 }
 @media (max-width: 460px) {
-  .brand { min-width: 0; }
-  .brand { min-width: 170px; min-height: 50px; padding: 4px 9px; }
-  .brand-logo { width: 158px; height: 42px; }
+  .brand { min-width: 170px; min-height: 50px; }
+  .brand-logo { width: 170px; height: 40px; }
+  .brand-light { padding: 4px 9px; }
+  .brand-light .brand-logo { width: 158px; height: 42px; }
   .hero h1 { font-size: 45px; }
   .hub-visual { width: 112%; margin-left: -6%; transform: scale(.76); margin-top: -45px; margin-bottom: -60px; }
   .steps-grid { grid-template-columns: 1fr; }
