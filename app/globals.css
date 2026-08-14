@@ -162,7 +162,7 @@ footer { background: #111419; color: white; padding: 54px 0 22px; }
 .footer-top p { color: rgba(255,255,255,.57); font-size: 12px; }
 .footer-top > a:last-child { font-size: 11px; color: var(--lime-bright); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding-top: 20px; display: flex; justify-content: space-between; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: .12em; font-size: 8px; }
-.whatsapp-float { position: fixed; right: 22px; bottom: 22px; z-index: 30; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: #25d366; color: white; box-shadow: 0 12px 32px rgba(0,0,0,.22); transition: transform .2s ease; }
+.whatsapp-float { position: fixed; right: 22px; bottom: 22px; z-index: 30; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: var(--green-3); color: white; box-shadow: 0 12px 32px rgba(0,0,0,.22); transition: transform .2s ease; }
 .whatsapp-float:hover { transform: scale(1.07); }
 .whatsapp-float svg { width: 29px; height: 29px; }
 
