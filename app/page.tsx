@@ -93,10 +93,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hub-visual" aria-label="Ecossistema de soluções IdeaCondo">
-            <div className="visual-glow" /><div className="orbit orbit-one" /><div className="orbit orbit-two" />
-            <div className="hub-center"><img className="hub-logo" src="/brands/ideacondo-logo.png" alt="IdeaCondo" /><small>Inteligência e inovação<br />para condomínios</small></div>
-            <div className="floating-card float-market"><span><Icon name="market" size={21} /></span><div><small>Conveniência</small><strong>Minimercados</strong></div></div>
+            <div className="hub-visual" aria-label="Ecossistema de soluções IdeaCondo">
+              <div className="visual-glow" /><div className="orbit orbit-one" /><div className="orbit orbit-two" />
+              <div className="hub-center"><img className="hub-logo" src="/brands/ideacondo-logo.png" alt="IdeaCondo" /><small>Inteligência e inovação<br />para condomínios</small></div>
+              <div className="floating-card float-laundry"><span><Icon name="laundry" size={21} /></span><div><small>Praticidade</small><strong>Lavanderias 24hrs</strong></div></div>
+              <div className="floating-card float-market"><span><Icon name="market" size={21} /></span><div><small>Conveniência</small><strong>Minimercados</strong></div></div>
             <div className="floating-card float-internet"><span><Icon name="internet" size={21} /></span><div><small>Tecnologia</small><strong>Internet Claro</strong></div></div>
             <div className="floating-card float-care"><span><Icon name="care" size={21} /></span><div><small>Bem-estar</small><strong>Assistências</strong></div></div>
             <div className="floating-card float-locker"><span><Icon name="locker" size={21} /></span><div><small>Praticidade</small><strong>Lockers</strong></div></div>

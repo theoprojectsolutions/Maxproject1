@@ -60,6 +60,7 @@ button { cursor: pointer; }
 .floating-card div { display: flex; flex-direction: column; gap: 3px; }
 .floating-card small { color: #7b897e; font-size: 9px; text-transform: uppercase; letter-spacing: .1em; }
 .floating-card strong { font-size: 13px; }
+.float-laundry { top: 4px; left: 50%; margin-left: -89px; animation-delay: -3.2s; }
 .float-market { left: 0; top: 84px; }
 .float-internet { right: -20px; top: 100px; animation-delay: -.8s; }
 .float-care { left: 4px; bottom: 82px; animation-delay: -1.6s; }
