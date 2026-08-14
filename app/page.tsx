@@ -24,9 +24,8 @@ function Icon({ name, size = 24 }: { name: IconName; size?: number }) {
 
 function BrandMark({ light = false }: { light?: boolean }) {
   return (
-    <a className={`brand ${light ? "brand-light" : ""}`} href="#inicio" aria-label="Hubstore24.com - início">
-      <span className="brand-symbol" aria-hidden="true"><i /><i /><i /><i /></span>
-      <span className="brand-copy"><strong>Hubstore24</strong><strong>.com</strong><small>soluções para condomínios</small></span>
+    <a className={`brand ${light ? "brand-light" : ""}`} href="#inicio" aria-label="IdeaCondo - início">
+      <img className="brand-logo" src="/brands/ideacondo-logo.png" alt="IdeaCondo" />
     </a>
   );
 }
@@ -54,7 +53,7 @@ export default function Home() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const text = [
-      "Olá, Max Hub! Gostaria de conhecer as soluções para o meu condomínio.", "",
+      "Olá, IdeaCondo! Gostaria de conhecer as soluções para o meu condomínio.", "",
       `Nome: ${data.get("nome")}`, `Condomínio: ${data.get("condominio")}`,
       `Cidade: ${data.get("cidade")}`, `WhatsApp: ${data.get("telefone")}`,
       `Interesse: ${data.get("interesse")}`,
@@ -72,7 +71,7 @@ export default function Home() {
           <nav className="desktop-nav" aria-label="Navegação principal">
             <a href="#solucoes">Soluções</a><a href="#como-funciona">Como funciona</a><a href="#parceiros">Parceiros</a><a href="#contato">Contato</a>
           </nav>
-          <a className="button button-small" href="#contato">Falar com a Max Hub <Icon name="arrow" size={18} /></a>
+          <a className="button button-small" href="#contato">Falar com a IdeaCondo <Icon name="arrow" size={18} /></a>
           <a className="mobile-contact" href="#contato" aria-label="Ir para contato"><Icon name="menu" /></a>
         </div>
       </header>
@@ -83,7 +82,7 @@ export default function Home() {
           <div className="hero-copy">
             <span className="eyebrow"><span /> Soluções de alto valor agregado</span>
             <h1>Seu condomínio,<br /><em>mais completo.</em></h1>
-            <p>A Max Hub conecta condomínios às melhores soluções de conveniência, tecnologia e bem-estar — tudo em um só lugar.</p>
+            <p>A IdeaCondo conecta condomínios às melhores soluções de conveniência, tecnologia e bem-estar — tudo em um só lugar.</p>
             <div className="hero-actions">
               <a className="button" href="#solucoes">Conheça as soluções <Icon name="arrow" size={19} /></a>
               <a className="text-link" href="#contato">Quero levar para meu condomínio</a>
@@ -94,9 +93,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hub-visual" aria-label="Ecossistema de soluções Max Hub">
+          <div className="hub-visual" aria-label="Ecossistema de soluções IdeaCondo">
             <div className="visual-glow" /><div className="orbit orbit-one" /><div className="orbit orbit-two" />
-            <div className="hub-center"><span className="mini-brand-symbol"><i /><i /><i /><i /></span><strong>Hubstore24<br />.com</strong><small>O hub do seu<br />condomínio</small></div>
+            <div className="hub-center"><img className="hub-logo" src="/brands/ideacondo-logo.png" alt="IdeaCondo" /><small>Inteligência e inovação<br />para condomínios</small></div>
             <div className="floating-card float-market"><span><Icon name="market" size={21} /></span><div><small>Conveniência</small><strong>Minimercados</strong></div></div>
             <div className="floating-card float-internet"><span><Icon name="internet" size={21} /></span><div><small>Tecnologia</small><strong>Internet Claro</strong></div></div>
             <div className="floating-card float-care"><span><Icon name="care" size={21} /></span><div><small>Bem-estar</small><strong>Assistências</strong></div></div>
@@ -109,7 +108,7 @@ export default function Home() {
 
       <section className="intro-strip">
         <div className="container intro-grid">
-          <p><span>MAX HUB</span> Transformamos espaços e necessidades em experiências que valorizam o condomínio.</p>
+          <p><span>IDEACONDO</span> Transformamos ideias e necessidades em experiências que valorizam o condomínio.</p>
           <div className="intro-stat"><strong>6</strong><span>frentes de<br />soluções</span></div>
           <div className="intro-stat"><strong>1</strong><span>ponto de<br />conexão</span></div>
         </div>
@@ -118,7 +117,7 @@ export default function Home() {
       <section className="section services-section" id="solucoes">
         <div className="container">
           <div className="section-heading">
-            <div><span className="eyebrow dark"><span /> Ecossistema Max Hub</span><h2>Soluções que fazem<br />a diferença no dia a dia.</h2></div>
+            <div><span className="eyebrow dark"><span /> Ecossistema IdeaCondo</span><h2>Soluções que fazem<br />a diferença no dia a dia.</h2></div>
             <p>Da conveniência à conectividade, reunimos serviços que simplificam a rotina e melhoram a experiência de viver em condomínio.</p>
           </div>
           <div className="services-grid">
@@ -144,7 +143,7 @@ export default function Home() {
             </div>
           </div>
           <div className="value-copy">
-            <span className="eyebrow dark"><span /> Por que Max Hub</span><h2>Mais soluções.<br />Menos complexidade.</h2>
+            <span className="eyebrow dark"><span /> Por que IdeaCondo</span><h2>Mais soluções.<br />Menos complexidade.</h2>
             <p>Um parceiro estratégico para centralizar oportunidades, conectar marcas confiáveis e transformar demandas do condomínio em benefícios reais.</p>
             <ul>
               <li><span><Icon name="check" size={17} /></span><div><strong>Curadoria especializada</strong><small>Soluções selecionadas para o mercado condominial.</small></div></li>
@@ -172,8 +171,8 @@ export default function Home() {
           <div className="partners-copy"><span className="eyebrow"><span /> Parceiros que conectam</span><h2>Grandes marcas.<br />Soluções confiáveis.</h2><p>Conectamos o seu condomínio a parceiros reconhecidos para entregar tecnologia, cuidado e serviços com qualidade.</p></div>
           <div className="partner-logos">
             <a href="#contato" className="partner-card partner-card-word" aria-label="Baratinho Mix"><strong className="partner-wordmark">Baratinho Mix</strong><span>Minimercados</span></a>
-            <a href="https://www.enelx.com/br/pt" target="_blank" rel="noreferrer" className="partner-card" aria-label="Conheça a Enel"><img src="/brands/enel-x.png" alt="Enel" /><span>Assistências e bem-estar</span></a>
             <a href="https://www.claro.com.br/" target="_blank" rel="noreferrer" className="partner-card" aria-label="Conheça a Claro"><img src="/brands/claro-empresas.svg" alt="Claro Empresas" /><span>Conectividade e internet</span></a>
+            <a href="https://www.enelx.com/br/pt" target="_blank" rel="noreferrer" className="partner-card" aria-label="Conheça a Enel X"><img src="/brands/enel-x.png" alt="Enel X" /><span>Assistências e bem-estar</span></a>
             <a href="#contato" className="partner-card partner-card-word" aria-label="Max Solutions"><strong className="partner-wordmark">Max Solutions</strong><span>Soluções condominiais</span></a>
           </div>
         </div>
@@ -189,17 +188,17 @@ export default function Home() {
             <label>Mensagem <span>(opcional)</span><textarea name="mensagem" rows={3} placeholder="Conte um pouco sobre a necessidade do condomínio" /></label>
             <button className="button form-button" type="submit">Enviar mensagem pelo WhatsApp <Icon name="arrow" size={19} /></button>
             {sent && <p className="form-status" role="status">Tudo certo! Abrimos sua conversa no WhatsApp.</p>}
-            <small className="privacy-note">Ao enviar, você concorda em ser contatado pela Max Hub.</small>
+            <small className="privacy-note">Ao enviar, você concorda em ser contatado pela IdeaCondo.</small>
           </form>
         </div>
       </section>
 
       <footer>
         <div className="container footer-top"><BrandMark light /><p>Soluções de alto valor agregado para condomínios.</p><a href="#inicio">Voltar ao topo ↑</a></div>
-        <div className="container footer-bottom"><span>© 2026 Hubstore24.com. Todos os direitos reservados.</span><span>Conveniência · Tecnologia · Bem-estar</span></div>
+        <div className="container footer-bottom"><span>© 2026 IdeaCondo. Todos os direitos reservados.</span><span>Inteligência · Criatividade · Inovação</span></div>
       </footer>
 
-      <a className="whatsapp-float" href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá, Max Hub! Gostaria de conhecer as soluções para condomínios.")}`} target="_blank" rel="noreferrer" aria-label="Falar com a Max Hub pelo WhatsApp">
+      <a className="whatsapp-float" href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá, IdeaCondo! Gostaria de conhecer as soluções para condomínios.")}`} target="_blank" rel="noreferrer" aria-label="Falar com a IdeaCondo pelo WhatsApp">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L.2 24l6.4-1.7c1.7.9 3.6 1.4 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Zm-8.4 18.2c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.3 4.6Zm5.4-7.3c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-2-.8-3.4-1.8-4.3-4-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.6.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.4-.3-.7-.4Z" fill="currentColor"/></svg>
       </a>
     </main>

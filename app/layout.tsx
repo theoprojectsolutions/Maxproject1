@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hubstore24.com - Soluções para Condomínios",
-  description: "Hub de soluções de conveniência, conectividade e bem-estar para condomínios.",
+  title: "IdeaCondo - Inteligência e Inovação para Condomínios",
+  description: "Soluções inteligentes, criativas e inovadoras que geram valor para condomínios.",
   other: {
     "codex-preview": "development",
   },
