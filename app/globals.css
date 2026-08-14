@@ -142,12 +142,12 @@ button { cursor: pointer; }
 .partners-section::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 80% 20%, rgba(200,235,82,.15), transparent 30%); }
 .partners-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; position: relative; }
 .partners-copy p { color: rgba(255,255,255,.65); line-height: 1.75; max-width: 490px; margin: 24px 0 0; font-size: 14px; }
-.partner-logos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.partner-logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .partner-card { height: 205px; border-radius: 22px; background: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 25px; color: var(--muted); transition: transform .2s ease; }
 .partner-card:hover { transform: translateY(-4px); }
 .partner-card img { width: 65%; height: 64px; object-fit: contain; }
-.partner-card:nth-child(2) img { width: 58%; height: 70px; }
 .partner-card span { font-size: 9px; letter-spacing: .13em; text-transform: uppercase; }
+.partner-wordmark { font-size: 22px; letter-spacing: -.03em; color: var(--green); text-align: center; padding: 0 12px; }
 
 .contact-section { padding: 115px 0; background: var(--cream); }
 .contact-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 85px; align-items: start; }

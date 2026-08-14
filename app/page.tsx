@@ -24,9 +24,9 @@ function Icon({ name, size = 24 }: { name: IconName; size?: number }) {
 
 function BrandMark({ light = false }: { light?: boolean }) {
   return (
-    <a className={`brand ${light ? "brand-light" : ""}`} href="#inicio" aria-label="Max Hub - início">
+    <a className={`brand ${light ? "brand-light" : ""}`} href="#inicio" aria-label="Hubstore24.com - início">
       <span className="brand-symbol" aria-hidden="true"><i /><i /><i /><i /></span>
-      <span className="brand-copy"><strong>MAX</strong><strong>HUB</strong><small>soluções para condomínios</small></span>
+      <span className="brand-copy"><strong>Hubstore24</strong><strong>.com</strong><small>soluções para condomínios</small></span>
     </a>
   );
 }
@@ -96,7 +96,7 @@ export default function Home() {
 
           <div className="hub-visual" aria-label="Ecossistema de soluções Max Hub">
             <div className="visual-glow" /><div className="orbit orbit-one" /><div className="orbit orbit-two" />
-            <div className="hub-center"><span className="mini-brand-symbol"><i /><i /><i /><i /></span><strong>MAX<br />HUB</strong><small>O hub do seu<br />condomínio</small></div>
+            <div className="hub-center"><span className="mini-brand-symbol"><i /><i /><i /><i /></span><strong>Hubstore24<br />.com</strong><small>O hub do seu<br />condomínio</small></div>
             <div className="floating-card float-market"><span><Icon name="market" size={21} /></span><div><small>Conveniência</small><strong>Minimercados</strong></div></div>
             <div className="floating-card float-internet"><span><Icon name="internet" size={21} /></span><div><small>Tecnologia</small><strong>Internet Claro</strong></div></div>
             <div className="floating-card float-care"><span><Icon name="care" size={21} /></span><div><small>Bem-estar</small><strong>Assistências</strong></div></div>
@@ -171,8 +171,10 @@ export default function Home() {
         <div className="container partners-layout">
           <div className="partners-copy"><span className="eyebrow"><span /> Parceiros que conectam</span><h2>Grandes marcas.<br />Soluções confiáveis.</h2><p>Conectamos o seu condomínio a parceiros reconhecidos para entregar tecnologia, cuidado e serviços com qualidade.</p></div>
           <div className="partner-logos">
+            <a href="#contato" className="partner-card partner-card-word" aria-label="Baratinho Mix"><strong className="partner-wordmark">Baratinho Mix</strong><span>Minimercados</span></a>
+            <a href="https://www.enelx.com/br/pt" target="_blank" rel="noreferrer" className="partner-card" aria-label="Conheça a Enel"><img src="/brands/enel-x.png" alt="Enel" /><span>Assistências e bem-estar</span></a>
             <a href="https://www.claro.com.br/" target="_blank" rel="noreferrer" className="partner-card" aria-label="Conheça a Claro"><img src="/brands/claro-empresas.svg" alt="Claro Empresas" /><span>Conectividade e internet</span></a>
-            <a href="https://www.enelx.com/br/pt" target="_blank" rel="noreferrer" className="partner-card" aria-label="Conheça a Enel X"><img src="/brands/enel-x.png" alt="Enel X" /><span>Assistências e bem-estar</span></a>
+            <a href="#contato" className="partner-card partner-card-word" aria-label="Max Solutions"><strong className="partner-wordmark">Max Solutions</strong><span>Soluções condominiais</span></a>
           </div>
         </div>
       </section>
@@ -194,7 +196,7 @@ export default function Home() {
 
       <footer>
         <div className="container footer-top"><BrandMark light /><p>Soluções de alto valor agregado para condomínios.</p><a href="#inicio">Voltar ao topo ↑</a></div>
-        <div className="container footer-bottom"><span>© 2026 Max Hub. Todos os direitos reservados.</span><span>Conveniência · Tecnologia · Bem-estar</span></div>
+        <div className="container footer-bottom"><span>© 2026 Hubstore24.com. Todos os direitos reservados.</span><span>Conveniência · Tecnologia · Bem-estar</span></div>
       </footer>
 
       <a className="whatsapp-float" href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá, Max Hub! Gostaria de conhecer as soluções para condomínios.")}`} target="_blank" rel="noreferrer" aria-label="Falar com a Max Hub pelo WhatsApp">
