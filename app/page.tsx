@@ -194,7 +194,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="container footer-top"><BrandMark light /><p>Soluções de alto valor agregado para condomínios.</p><a href="#inicio">Voltar ao topo ↑</a></div>
+        <div className="container footer-top"><BrandMark /><p>Soluções de alto valor agregado para condomínios.</p><a href="#inicio">Voltar ao topo ↑</a></div>
         <div className="container footer-bottom"><span>© 2026 IdeaCondo. Todos os direitos reservados.</span><span>Inteligência · Criatividade · Inovação</span></div>
       </footer>
 
